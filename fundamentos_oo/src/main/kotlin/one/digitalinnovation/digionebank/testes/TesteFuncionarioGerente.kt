@@ -4,10 +4,15 @@ import one.digitalinnovation.digionebank.Gerente
 
 fun main() {
 
-    val Jean = Gerente("Jean Henrique", "999.999.999", 6000.0 )
+    val jean = Gerente(
+        nome= "Jean Henrique",
+        cpf = "999.999.999",
+        salario = 6000.0,
+        senha = "senha123"
+    )
 
-    ImprimeRelatorioFuncionario.imprime(Jean)
-    println("")
+    ImprimeRelatorioFuncionario.imprime(jean)
+    TesteAutenticacao().autentica(jean)
 
 }
 
